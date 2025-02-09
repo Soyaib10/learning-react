@@ -5,9 +5,8 @@
   text-align: center;
 }
 
-.image-style {
-  width: 100px;
-  height: 100px;
+.greeting {
+  color: red;
 }
 
 .logo {
