@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import UseEffect1 from './components/UseEffect1'
 import UseEffectApi from './components/UseEffectApi'
+import Document from './components/custom-hooks/Document'
+import Counter from './components/use-ref/Counter'
+import DomRef from './components/use-ref/DomRef'
+
 
 function App() {
   return (
     <div>
       <UseEffect1 />
-      <UseEffectApi />
+      <UseEffectApi />  
+      <Document/>
+      <DomRef />
+      <Counter />
     </div>
   )
 }
