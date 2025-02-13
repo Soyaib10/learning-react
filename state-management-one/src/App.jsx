@@ -5,6 +5,8 @@ import EventBubbling from './components/function-based/EventBubbling'
 import ControlledComponent from './components/function-based/ControlledComponent'
 // import Parent from './components/function-based/ParentToChild'
 import Parent from './components/function-based/ChildToParent'
+import TodoApp from './components/Todo.jsx/TodoApp'
+import PropDrilling from '../../react-hooks-latest/src/components/prop-drilling/PropDrilling'
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
       <EventBubbling/>
       <ControlledComponent />
       <Parent />
-      {/* <parent /> */}
+      <TodoApp />
+      <PropDrilling />
     </div>
   )
 }
