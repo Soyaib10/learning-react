@@ -30,9 +30,12 @@ function Home() {
             </form>
 
             <div className="movies-grid">
-                {movies.map((i) => (
+                {/* {movies.map((i) => (
                     <MovieCard movie={i} key={i.id} />
-                ))}
+                ))} */}
+                {movies.map(
+                    (i) => i.title.toLocaleLowerCase().startsWith(searchQuery) && (<MovieCard movie={i} key={i.id} />)
+                )}
             </div>
         </div>
     )
