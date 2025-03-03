@@ -1,10 +1,12 @@
 import React from "react";
-import FormComponents from "./components/FormComponents";
+import InputComponents from "./components/InputComponents";
+import DataDisplayComponents from "./components/DisplayDataComponents";
 
 function App() {
   return (
     <div>
-      <FormComponents />
+      {/* <InputComponents /> */}
+      <DataDisplayComponents />
     </div>
   )
 }
