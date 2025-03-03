@@ -1,20 +1,33 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import './App.css'
-import { Typography } from "@mui/material";
+import { Card, CardActionArea, CardActions, CardContent, Typography } from "@mui/material";
 
 function App() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <Button variant="contained" color="primary">Click Me</Button>
-
-      <Typography variant="h2" gutterBottom>This is heading</Typography>
-      <Typography variant="body1">
-        This is paragraph. MUI typography helps text.
-      </Typography>
-      <Typography variant="body2">
-        This is body2 text. It's smaller than body1 and used for secondary information.
-      </Typography>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
+      <Card sx={{ width: 300 }}>
+        <CardContent>
+          <Typography variant="h5" component="div">
+            Card Title
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            This is a simple card component example.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button
+            variant="outlined"
+            size="small"
+            component="a"
+            href="https://www.example.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn More
+          </Button>
+        </CardActions>
+      </Card>
     </div>
   )
 }
